@@ -39,11 +39,11 @@ public partial class _Default : System.Web.UI.Page
                     Session["FullName"] = m_Users.FullName;
                     if ((m_Actions.GetList(LogFilePath, LogFileName, m_Users.UserId)).Count > 0)
                     {
-                        Response.Redirect("/Code1/Admin/AdmActions.aspx");
+                        Response.Redirect("/PMCD_WEB/Admin/AdmActions.aspx");
                     }
                     else
                     {
-                        Response.Redirect("/Code1/Admin/PrivatePage.aspx");
+                        Response.Redirect("/PMCD_WEB/Admin/PrivatePage.aspx");
                     }
                 }
                 else
