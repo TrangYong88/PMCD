@@ -1,0 +1,30 @@
+D:\Document\PMCD\Code\ConsoleApplication3\Elearn\obj\Debug\ResolveAssemblyReference.cache
+D:\Document\PMCD\Code\ConsoleApplication3\Elearn\bin\Debug\Elearn.dll
+D:\Document\PMCD\Code\ConsoleApplication3\Elearn\bin\Debug\Elearn.pdb
+D:\Document\PMCD\Code\ConsoleApplication3\Elearn\bin\Debug\LibDb.dll
+D:\Document\PMCD\Code\ConsoleApplication3\Elearn\bin\Debug\LibUtils.dll
+D:\Document\PMCD\Code\ConsoleApplication3\Elearn\bin\Debug\SgmlReaderDll.dll
+D:\Document\PMCD\Code\ConsoleApplication3\Elearn\bin\Debug\LibUtils.pdb
+D:\Document\PMCD\Code\ConsoleApplication3\Elearn\bin\Debug\LibDb.pdb
+D:\Document\PMCD\Code\ConsoleApplication3\Elearn\obj\Debug\Elearn.dll
+D:\Document\PMCD\Code\ConsoleApplication3\Elearn\obj\Debug\Elearn.pdb
+D:\Document\PMCD\Code\PMCD\Elearn\bin\Debug\Elearn.dll
+D:\Document\PMCD\Code\PMCD\Elearn\bin\Debug\Elearn.pdb
+D:\Document\PMCD\Code\PMCD\Elearn\bin\Debug\LibDb.dll
+D:\Document\PMCD\Code\PMCD\Elearn\bin\Debug\LibUtils.dll
+D:\Document\PMCD\Code\PMCD\Elearn\bin\Debug\SgmlReaderDll.dll
+D:\Document\PMCD\Code\PMCD\Elearn\bin\Debug\LibUtils.pdb
+D:\Document\PMCD\Code\PMCD\Elearn\bin\Debug\LibDb.pdb
+D:\Document\PMCD\Code\PMCD\Elearn\obj\Debug\ResolveAssemblyReference.cache
+D:\Document\PMCD\Code\PMCD\Elearn\obj\Debug\Elearn.dll
+D:\Document\PMCD\Code\PMCD\Elearn\obj\Debug\Elearn.pdb
+D:\Document\PMCD\Code\PMCD - Copy\Elearn\bin\Debug\Elearn.dll
+D:\Document\PMCD\Code\PMCD - Copy\Elearn\bin\Debug\Elearn.pdb
+D:\Document\PMCD\Code\PMCD - Copy\Elearn\bin\Debug\LibDb.dll
+D:\Document\PMCD\Code\PMCD - Copy\Elearn\bin\Debug\LibUtils.dll
+D:\Document\PMCD\Code\PMCD - Copy\Elearn\bin\Debug\SgmlReaderDll.dll
+D:\Document\PMCD\Code\PMCD - Copy\Elearn\bin\Debug\LibUtils.pdb
+D:\Document\PMCD\Code\PMCD - Copy\Elearn\bin\Debug\LibDb.pdb
+D:\Document\PMCD\Code\PMCD - Copy\Elearn\obj\Debug\ResolveAssemblyReference.cache
+D:\Document\PMCD\Code\PMCD - Copy\Elearn\obj\Debug\Elearn.dll
+D:\Document\PMCD\Code\PMCD - Copy\Elearn\obj\Debug\Elearn.pdb

@@ -1,0 +1,23 @@
+html {
+	overflow: -moz-scrollbars-vertical;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+ 
+img {
+	border: none;
+	
+}
+ 
+.png {
+	 behavior: url('Modules/Menu/Resource/iepngfix.htc');
+	 
+}
+
+a:visited {
+	color: #000000;
+}
+ 

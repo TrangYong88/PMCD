@@ -1,0 +1,81 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B61142D-17D6-44F3-98FD-E4A62A781B92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Elearn</RootNamespace>
+    <AssemblyName>Elearn</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Actions.cs" />
+    <Compile Include="Code\Answers.cs" />
+    <Compile Include="Code\BookKinds.cs" />
+    <Compile Include="Code\Books.cs" />
+    <Compile Include="Code\Classes.cs" />
+    <Compile Include="Code\ClassTestQuestions.cs" />
+    <Compile Include="Code\ClassTests.cs" />
+    <Compile Include="Code\ClassTestUserQuestions.cs" />
+    <Compile Include="Code\ClassTestUsers.cs" />
+    <Compile Include="Code\Curriculums.cs" />
+    <Compile Include="Code\ElearnConstants.cs" />
+    <Compile Include="Code\Genders.cs" />
+    <Compile Include="Code\QuestionCurriculums.cs" />
+    <Compile Include="Code\QuestionLevels.cs" />
+    <Compile Include="Code\Questions.cs" />
+    <Compile Include="Code\QuestionTypes.cs" />
+    <Compile Include="Code\Ranks.cs" />
+    <Compile Include="Code\TestStatus.cs" />
+    <Compile Include="Code\TestTypes.cs" />
+    <Compile Include="Code\UploadFiles.cs" />
+    <Compile Include="Code\UserActions.cs" />
+    <Compile Include="Code\UserClasses.cs" />
+    <Compile Include="Code\Users.cs" />
+    <Compile Include="Code\UserStatus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Code_refer\LibDb\LibDb.csproj">
+      <Project>{7ABCB482-A85C-46F9-92ED-D89CEB1C6B10}</Project>
+      <Name>LibDb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Lib\LibUtils\LibUtils.csproj">
+      <Project>{4818E63C-FCDD-45D1-92AB-5FBB2F0A04F8}</Project>
+      <Name>LibUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

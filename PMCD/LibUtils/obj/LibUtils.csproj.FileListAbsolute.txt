@@ -1,0 +1,6 @@
+D:\Document\PMCD\Code\Lib\LibUtils\obj\Debug\ResolveAssemblyReference.cache
+D:\Document\PMCD\Code\Lib\LibUtils\bin\Debug\LibUtils.dll
+D:\Document\PMCD\Code\Lib\LibUtils\bin\Debug\LibUtils.pdb
+D:\Document\PMCD\Code\Lib\LibUtils\bin\Debug\SgmlReaderDll.dll
+D:\Document\PMCD\Code\Lib\LibUtils\obj\Debug\LibUtils.dll
+D:\Document\PMCD\Code\Lib\LibUtils\obj\Debug\LibUtils.pdb
