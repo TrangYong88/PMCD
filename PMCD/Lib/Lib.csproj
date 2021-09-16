@@ -40,7 +40,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Lib\LibUtils\LibUtils.csproj">
+    <ProjectReference Include="..\LibUtils\LibUtils.csproj">
       <Project>{4818E63C-FCDD-45D1-92AB-5FBB2F0A04F8}</Project>
       <Name>LibUtils</Name>
     </ProjectReference>

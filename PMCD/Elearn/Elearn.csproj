@@ -61,11 +61,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Code_refer\LibDb\LibDb.csproj">
+    <ProjectReference Include="..\LibDb\LibDb.csproj">
       <Project>{7ABCB482-A85C-46F9-92ED-D89CEB1C6B10}</Project>
       <Name>LibDb</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Lib\LibUtils\LibUtils.csproj">
+    <ProjectReference Include="..\LibUtils\LibUtils.csproj">
       <Project>{4818E63C-FCDD-45D1-92AB-5FBB2F0A04F8}</Project>
       <Name>LibUtils</Name>
     </ProjectReference>

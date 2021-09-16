@@ -1,1 +1,2 @@
 D:\Document\PMCD\Code\ConsoleApplication3\Lib\obj\Debug\ResolveAssemblyReference.cache
+D:\Document\PMCD\Git\PMCD\PMCD\Lib\obj\Debug\ResolveAssemblyReference.cache

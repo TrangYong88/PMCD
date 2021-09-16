@@ -49,12 +49,12 @@ public partial class Admin_MainForm : System.Web.UI.Page
                 }
                 else
                 {
-                    Redirect = "/Code1/Admin/Default.aspx";
+                    Redirect = "/PMCD_WEB/Admin/Default.aspx";
                 }
             }
             else
             {
-                Redirect = "/Code1/Admin/Default.aspx";
+                Redirect = "/PMCD_WEB/Admin/Default.aspx";
             }
         }
         catch (Exception ex)
@@ -70,11 +70,11 @@ public partial class Admin_MainForm : System.Web.UI.Page
     protected void btnLogout_Click(object sender, EventArgs e)
     {
         HttpContext.Current.Session.Remove("ActUserId");
-        Response.Redirect("/Code1/Admin/Default.aspx");
+        Response.Redirect("/PMCD_WEB/Admin/Default.aspx");
     }
     //---------------------------------------------------------------------------------------
     protected void btnManageForm_Click(object sender, EventArgs e)
     {
-        Response.Redirect("/Code1/Admin/MainForm.aspx");
+        Response.Redirect("/PMCD_WEB/Admin/MainForm.aspx");
     }
 }
