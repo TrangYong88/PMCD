@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageAdmin.master.cs" Inherits="MasterPageAdmin" %>
+<%@ Register Src="~/admin/showspmenu.ascx" TagName="MenuControl" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head id="Head1" runat="server">
+    <title>.: Hệ thống quản lý đào tạo :.</title>
+    <meta name="description" content="AnNguyenJsc"/>
+    <meta http-equiv="Content-Language" content="en-us"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Expires" content="1800"/>
+    <link rel="stylesheet" type="text/css" href="~/admin/Css/ddsmoothmenu.css" />
+    <script type="text/javascript" src="<%=ROOT_PATH %>admin/Css/ddsmoothmenu.js"></script>
+    <meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1"/>
+	  <meta name="CODE_LANGUAGE" content="C#"/>
+	  <meta name="vs_defaultClientScript" content="JavaScript"/>	
+	  <asp:ContentPlaceHolder id="m_head" runat="server">
+      <script type="text/javascript" src="<%=ROOT_PATH %>admin/JavaScript/jquery-1.8.2.min.js"></script>
+      <script type="text/javascript" src="<%=ROOT_PATH %>admin/JavaScript/jquery-ui-1.8.23.custom.min.js"></script>
+      <script type="text/javascript" src="<%=ROOT_PATH %>admin/JavaScript/jquery.msgBox.js"></script>
+      <link href="<%=ROOT_PATH %>admin/bdc_style.css" rel="stylesheet" type="text/css" />
+      <link href="<%=ROOT_PATH %>admin/Css/jquery.msg.css" rel="stylesheet" type="text/css" />
+      <link href="<%=ROOT_PATH %>admin/Css/msgBoxLight.css" rel="stylesheet" type="text/css" />
+      <link href="<%=ROOT_PATH %>admin/Css/jquery-ui-1.8.23.custom.css" rel="stylesheet" type="text/css" />
+      <link href="<%=ROOT_PATH %>admin/Css/gridviewStyles.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript" src="<%=ROOT_PATH %>admin/menujs/JSCookMenu.js"></script>
+      <script type="text/javascript" src="<%=ROOT_PATH %>admin/menujs/effect.js"></script>
+      <script type="text/javascript" src="<%=ROOT_PATH %>admin/menujs/theme.js"></script>
+      <link type="text/css" rel="stylesheet" href="<%=ROOT_PATH %>admin/menujs/default.css" />
+      <link type="text/css" rel="stylesheet" href="<%=ROOT_PATH %>admin/menujs/theme.css" />
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+      ddsmoothmenu.init(
+      {
+	      mainmenuid: "smoothmenu1", //menu DIV id
+	      orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	      classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	      //customtheme: ["#1c5a80", "#18374a"],
+	      contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+      })
+    </script>
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5"/>
+  </head>
+  <body class="pageBody" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" onLoad="init()">
+    <%--For upload file Must be enctype="multipart/form-data"--%>
+    <form id="frmMain" runat="server" method="post" enctype="multipart/form-data">
+      <div>
+        <div id="loading" style="position:absolute; width:100%; text-align:center; top:300px;">
+        <img alt="" src="<%=ROOT_PATH %>loading.gif" border="0"/></div>
+      </div>
+      <script type="text/javascript">
+           var ld=(document.all);
+            var ns4=document.layers;
+           var ns6=document.getElementById&&!document.all;
+           var ie4=document.all;
+            if (ns4)
+ 	          ld=document.loading;
+           else if (ns6)
+ 	          ld=document.getElementById("loading").style;
+           else if (ie4)
+ 	          ld=document.all.loading.style;
+            function init()
+           {
+           if(ns4){ld.visibility="hidden";}
+           else if (ns6||ie4) ld.display="none";
+           }
+      </script>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+		  <td width="100%">
+        <uc1:MenuControl ID="m_menuLeft" runat="server" />
+		  </td>
+		</tr>
+	  </table>    
+      <table border="0" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <%--<td valign="top" width="15" class="mainContentCell">&nbsp;</td>--%>
+          <%--<td valign="top" width="*" class="mainContentCell"><br/>--%>
+          <td valign="top" >
+            <asp:ValidationSummary ID="m_validationSummary" runat="server" CssClass="ValidatorSummary" />
+            <div style = "overflow:scroll;width:100%">
+              <asp:contentplaceholder id="m_contentBody" runat="server" > </asp:contentplaceholder>
+            </div>
+          </td>
+        </tr>
+      </table>       
+      <table width="100%" height="13" border="0" cellpadding="0" cellspacing="0">
+	    <tr valign="top">
+		    <td bgcolor="#d8dfec" width="*" style="height: 13px">
+		      <asp:Image ID="Image2" runat="server" ImageUrl="~/admin/images/bottom_left_corner.gif"  Width="16" Height="13"/>
+		    </td>
+		  </tr>
+		<tr valign="top">
+		  <td>&nbsp;</td>
+		</tr>
+		<tr valign="top">
+		  <td style="height: 76px">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr valign="middle" class="footerText">
+			    <td style="height: 14px">
+                  Hệ thống <font color="red"> Quản lý đào tạo </font> phiên bản 1.0, 08/2021. <br/>
+                  Địa chỉ: <%=OFFICE_ADDRESS%><br/>
+                  Email: <a href="mailto:<%=MAIL_USER%>" class="footerText" title="email <%=MAIL_USER %>"><%=MAIL_USER %></a><br/> 
+                  Điện thoại: <%=PHONE_USER%> 
+          </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr valign="top">
+		  <td style="height: 25px">&nbsp;</td>
+		</tr>
+	  </table>
+    </form>
+  </body>
+</html>
